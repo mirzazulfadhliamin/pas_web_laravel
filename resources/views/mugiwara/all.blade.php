@@ -6,7 +6,7 @@
 <div class="container mt-4">
 
     <h1 class="text-4xl font-extrabold text-dark-900 mb-1 text-center">Selamat Datang di Dunia One Piece</h1>
-    <h3 class="text-4xl font-extrabold  mb-1 text-center">Kru Red-Haired</h3>
+    <h3 class="text-4xl font-extrabold  mb-1 text-center">Kru Mugiwara</h3>
 
     <div class="container mx-auto">
         <h1 class="text-2xl font-bold mb-4">Tabel Bajak Laut</h1>
