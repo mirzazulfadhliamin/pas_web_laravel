@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MugiwaraController;
+use App\Http\Controllers\PirateKingController;
 use App\Http\Controllers\RedhairedController;
 use App\Models\Redhaired;
 use Illuminate\Support\Facades\Route;
@@ -25,9 +26,11 @@ Route::get('/',function (){
 });
 Route::get('/mugiwara', [MugiwaraController::class, 'index']);
 Route::get('/redhaired', [RedhairedController::class, 'index']);
+Route::get('/PirateKing', [PirateKingController::class, 'index']);
 
 Route::get('/mugiwara/detail/{mugiwara}', [MugiwaraController::class, 'show']);
 Route::get('/redhaired/detail/{mugiwara}', [RedhairedController::class, 'show']);
+Route::get('/PirateKing/detail/{pirateKing}', [PirateKingController::class, 'show']);
 
 
 Route::get('/home',function (){
