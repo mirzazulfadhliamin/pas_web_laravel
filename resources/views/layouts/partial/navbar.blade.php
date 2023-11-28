@@ -43,7 +43,7 @@
                   <a href="/" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
                   <a href="/mugiwara" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Mugiwara</a>
                   <a href="/redhaired" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Red-Haired</a>
-                  <a href="/pirate-king" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Pirate King</a>
+                  <a href="/PirateKing" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Pirate King</a>
                 </div>
               </div>
             </div>

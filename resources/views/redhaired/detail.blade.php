@@ -15,7 +15,7 @@
 
                         <div class="flex justify-between items-center mb-4">
                             <p class="text-gray-300">Devisi: {{ $kru->devisi }}</p>
-                            <p class="text-yellow-400">Bounty: Rp {{ number_format($kru->bounty, 0, ',', '.') }}</p>
+                            <p class="text-yellow-400">Bounty: {{ number_format($kru->bounty, 0, ',', '.') }}</p>
                         </div>
 
                         <p class="text-gray-300 mb-4">Tanggal Bergabung: {{ $kru->tanggal_bergabung }}</p>

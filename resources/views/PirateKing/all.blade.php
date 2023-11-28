@@ -5,8 +5,9 @@
 @section('content')
 <div class="container mt-4">
 
-    <h1 class="text-4xl font-extrabold text-dark-900 mb-1 text-center">Selamat Datang di Dunia One Piece</h1>
-    <h3 class="text-4xl font-extrabold  mb-1 text-center">Kru Mugiwara</h3>
+    <h1 class="text-4xl font-extrabold  mb-1 text-center">Selamat Datang di Dunia One Piece</h1>
+    <h3 class="text-4xl font-extrabold  mb-1 text-center">Kru PirateKing</h3>
+
 
     <div class="container mx-auto">
         <h1 class="text-2xl font-bold mb-4">Tabel Bajak Laut</h1>
@@ -15,10 +16,8 @@
             <thead>
                 <tr>
                     <th class="py-2 px-4 border-b">No</th>
-                    <th class="py-2 px-4 border-b">Foto</th>
+                    {{-- <th class="py-2 px-4 border-b">Foto</th> --}}
                     <th class="py-2 px-4 border-b">Nama</th>
-                    <th class="py-2 px-4 border-b">Buah iblis</th>
-
                     <th class="py-2 px-4 border-b">Peringkat</th>
                     <th class="py-2 px-4 border-b">Asal</th>
                     <th class="py-2 px-4 border-b">Bounty</th>
@@ -30,17 +29,16 @@
                 @foreach ($mugiwaras as $mugiwara)
                 <tr>
                     <td class="py-2 px-4 border-b">{{ $no++ }}</td>
-                    <td class="py-2 px-4 border-b"><img src="{{ URL('images/' . $mugiwara->gambar) }}" alt="Luffy"
-                            class="w-10 h-10 object-cover rounded-full"></td>
+                    {{-- <td class="py-2 px-4 border-b"><img src="{{ URL('images/thumnail.jpg') }}" alt="Luffy"
+                            class="w-10 h-10 object-cover rounded-full"></td> --}}
                     <td class="py-2 px-4 border-b">{{ $mugiwara->nama }}</td>
-                    <td class="py-2 px-4 border-b">{{ $mugiwara->kekuatan_buah_iblis }}</td>
                     <td class="py-2 px-4 border-b">{{ $mugiwara->devisi }}</td>
                     <td class="py-2 px-4 border-b">{{ $mugiwara->tempat_asal }}</td>
                     <td class="py-2 px-4 border-b"> {{ number_format($mugiwara->bounty, 0, ',', '.') }}</td>
 
                     <td class="py-2 px-4 border-b">{{ $mugiwara->tanggal_bergabung }}</td>
                     <td class="py-2 px-4 border-b">
-                        <a href="/mugiwara/detail/{{ $mugiwara->id }}">
+                        <a href="/PirateKing/detail/{{ $mugiwara->id }}">
                             <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
                                 Detail Page
                             </button>
